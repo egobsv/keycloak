@@ -2,7 +2,8 @@
 
 Este es un ejemplo usando SpringBoot y el adaptador de Keycloak.
 
-**Adaptador Keycloak**:  Se encarga de controlar la interacción de la aplicación Springboot con el servidor Keycloak para verficar los token de acceso JWT. También permite definir la reglas de autorización de rutas en base a los roles contenidos en el JWT.  La configuración de este adaptador esta disponible en el archivo de [propiedades de la aplicación](/src/main/resources/application.properties). 
+**Adaptador Keycloak**:  Se encarga de controlar la interacción de la aplicación Springboot con el servidor Keycloak para verficar los token de acceso JWT. También permite definir la reglas de autorización de rutas en base a los roles contenidos en el JWT.  La configuración de este adaptador esta disponible en el archivo de [propiedades de la aplicación](/apirest/src/main/resources/application.properties). 
+
 
 
 ## Instalación y uso
