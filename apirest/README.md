@@ -5,10 +5,11 @@ Para proteger el servicio REST usando el Token JWT, este servicio debe procesar 
  * Comunciarse con el Servidor de Autorización (en este caso Keycloak) que emitió el token y confimar que la firma eletrónica del JWT es válida.
 * Verificar que el JWT no ha expirado
 * Verifica que el JWT fue creado para consumir este servicio (audiencia)
+* Veririficar el JWT contiene el rol necesario para consumir la ruta deseada. 
 
 Estas verificaciones las realiza de forma automática el [adaptador de aplicación cliente de Keycloak](https://www.keycloak.org/downloads.html) 
 
-Este es un ejemplo usando el adaptador de Keycloak para SpringBoot.
+Este es un ejemplo de servicio REST usando el adaptador de Keycloak para SpringBoot.
 
 **Adaptador Keycloak**:  Se encarga de controlar la interacción de la aplicación Springboot con el servidor Keycloak para verficar los token de acceso JWT. También permite definir la reglas de autorización de rutas en base a los roles contenidos en el JWT.  La configuración de este adaptador esta disponible en el archivo de [propiedades de la aplicación](/apirest/src/main/resources/application.properties). 
 

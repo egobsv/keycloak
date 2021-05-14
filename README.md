@@ -12,7 +12,7 @@ Es un conjunto de servicios, clientes, roles, usuarios, grupos, políticas, etc.
 
 **Servicios**: Recive peticiones autenticadas usando un token de acceso JWT. Verifica la firma del JWT. Dentro de Keycloak es un cliente en modo 'Bearer-Only'.
 
-**Clientes**: Envia peticiones de login (autenticar) y recive un token de acceso JWT. Realiza consultas al Servicio usando el Token  de acceso JWT. Dentro de Keycloak es un cliente en modo 'Confidential'.
+**Clientes**: Envia peticiones de login (autenticar) y recive un token de acceso JWT. Realiza consultas al Servicio usando el Token  de acceso JWT. Dentro de Keycloak es un cliente en modo 'Confidential' con el modo 'Service Account' activado.
 
 ![imagen](keycloak-jwt.png)
 
